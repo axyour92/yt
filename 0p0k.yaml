@@ -25,3 +25,18 @@ proxies:
       headers:
         Host: sg6-trojan.bonds.id
     udp: true
+  - name: sshocean-xxx
+    server: api.midtrans.com
+    port: 443
+    type: vless
+    uuid: 923d4fdc-e973-4af5-8f28-bf4e1b6fa853
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: api.midtrans.com
+    network: ws
+    ws-opts:
+      path: wss://api.midtrans.com/websocket
+      headers:
+        Host: sg2-ws.xvless.xyz
+    udp: true
