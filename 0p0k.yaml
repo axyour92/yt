@@ -1,0 +1,27 @@
+proxies:
+  - name: byu
+    server: 162.159.138.78
+    port: 443
+    type: trojan
+    password: 556975f0-2a15-11ed-876a-1239d0255272
+    skip-cert-verify: true
+    sni: space.byu.id
+    network: ws
+    ws-opts:
+      path: ws://space.byu.id/howdy
+      headers:
+        Host: id5-trojan.bonds.id
+    udp: true
+  - name: tsel
+    server: 104.17.2.81
+    port: 443
+    type: trojan
+    password: d072b710-2a15-11ed-8482-1239d0255272
+    skip-cert-verify: true
+    sni: api.midtrans.com
+    network: ws
+    ws-opts:
+      path: ws://api.midtrans.com/howdy
+      headers:
+        Host: sg6-trojan.bonds.id
+    udp: true
