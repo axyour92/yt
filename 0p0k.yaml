@@ -40,3 +40,16 @@ proxies:
       headers:
         Host: sg2-ws.xvless.xyz
     udp: true
+  - name: SG UDPGW Trojan VPN
+    server: 104.18.2.2
+    port: 443
+    type: trojan
+    password: dce05d20-2b3d-11ed-875f-1239d0255272
+    skip-cert-verify: true
+    sni: io.ruangguru.com
+    network: ws
+    ws-opts:
+      path: wss://io.ruangguru.com/howdy
+      headers:
+        Host: sg8-trojan.bonds.id
+    udp: true
